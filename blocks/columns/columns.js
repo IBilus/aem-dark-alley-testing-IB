@@ -2,6 +2,7 @@ export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add('columns-${cols.length}-cols');
   block.classList.add('testClassName');
+  block.classList.add('testClassName2');
 
   // setup image columns
   [...block.children].forEach((row) => {
