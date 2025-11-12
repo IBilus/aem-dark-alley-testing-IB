@@ -3,6 +3,8 @@ export default function decorate(block) {
   block.classList.add(`columns-${cols.length}-cols`);
   block.classList.add(`testClassName`);
 
+  const ul = document.createElement('ul');
+
   // setup image columns
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
@@ -16,4 +18,6 @@ export default function decorate(block) {
       }
     });
   });
+
+  block.replaceChildren(ul);
 }
