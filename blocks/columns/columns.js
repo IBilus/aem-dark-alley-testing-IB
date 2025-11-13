@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
+  const cols = [...block.firstElementChild.children]; // eslint-disable-line
   block.classList.add('columns-${cols.length}-cols');
   block.classList.add('testClassName');
   block.classList.add('testClassName2');
