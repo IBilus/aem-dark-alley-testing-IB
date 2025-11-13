@@ -1,10 +1,11 @@
 /* eslint-disable */
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
-  block.classList.add('columns-${cols.length}-cols');
-  block.classList.add('testClassName');
-  block.classList.add('testClassName2');
+  block.classList.add(`columns-${cols.length}-cols`);
+  block.classList.add(`testClassNameCoinflip`);
 
+  /*const ul = document.createElement('ul');
+  
   // setup image columns
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
@@ -17,5 +18,5 @@ export default function decorate(block) {
         }
       }
     });
-  });
+  });*/
 }
