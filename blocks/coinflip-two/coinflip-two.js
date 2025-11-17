@@ -2,7 +2,6 @@ export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
   block.classList.add(`testClassNameCoinflip`);
-  let a = 2;
 
   /*const ul = document.createElement('ul');
 
