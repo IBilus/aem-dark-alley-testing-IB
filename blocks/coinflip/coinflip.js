@@ -2,7 +2,7 @@
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
-  block.classList.add(`testClassNameCoinflip2`);
+  block.classList.add(`testClassNameCoinflip3`);
 
   const img = document.createElement('img');
   img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/1280px-1925_Ford_Model_T_touring.jpg';
