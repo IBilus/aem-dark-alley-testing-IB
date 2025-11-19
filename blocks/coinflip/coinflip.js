@@ -2,7 +2,7 @@
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
-  block.classList.add(`testClassNameCoinflip`);
+  block.classList.add(`testClassNameCoinflip2`);
 
   const img = document.createElement('img');
   block.replaceChildren(img);
