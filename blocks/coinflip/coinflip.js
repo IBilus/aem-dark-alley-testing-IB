@@ -4,8 +4,11 @@ export default function decorate(block) {
   block.classList.add(`columns-${cols.length}-cols`);
   block.classList.add(`testClassNameCoinflip`);
 
+  const img = document.createElement('img');
+  block.replaceChildren(img);
+
   /*const ul = document.createElement('ul');
-  
+
   // setup image columns
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
