@@ -5,6 +5,7 @@ export default function decorate(block) {
   block.classList.add(`testClassNameCoinflip2`);
 
   const img = document.createElement('img');
+  img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/1280px-1925_Ford_Model_T_touring.jpg';
   block.replaceChildren(img);
 
   /*const ul = document.createElement('ul');
