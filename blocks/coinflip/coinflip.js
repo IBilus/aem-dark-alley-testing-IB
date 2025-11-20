@@ -2,7 +2,7 @@
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
-  block.classList.add(`testClassNameCoinflip3`);
+  block.classList.add(`testClassNameCoinfli4`);
 
   const img = document.createElement('img');
   const randNum = Math.random() > 0.5 ? 0 : 1;
